@@ -23,7 +23,7 @@ export default function Home() {
         <div id="slide1" className="carousel-item relative w-full">
           <img
             src={`/images/IMG_0160.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-88" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide0" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide2" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
@@ -32,7 +32,7 @@ export default function Home() {
         <div id="slide2" className="carousel-item relative w-full">
           <img
             src={`/images/IMG_0106.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-80" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide1" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide3" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
@@ -41,7 +41,7 @@ export default function Home() {
         <div id="slide3" className="carousel-item relative w-full">
           <img
             src={`/images/SNC00085.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-72" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide2" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide4" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
@@ -50,7 +50,7 @@ export default function Home() {
         <div id="slide4" className="carousel-item relative w-full">
           <img
             src={`/images/SNC00132.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-64" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide3" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide5" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
@@ -59,7 +59,7 @@ export default function Home() {
         <div id="slide5" className="carousel-item relative w-full">
           <img
             src={`/images/IMG_0418.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-56" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide4" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide6" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
@@ -68,7 +68,7 @@ export default function Home() {
         <div id="slide6" className="carousel-item relative w-full">
           <img
             src={`/images/IMG_0432.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-48" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide5" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide7" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
@@ -77,7 +77,7 @@ export default function Home() {
         <div id="slide7" className="carousel-item relative w-full">
           <img
             src={`/images/IMG_0429.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto" />
+            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-40" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide6" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide0" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
