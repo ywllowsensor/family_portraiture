@@ -13,6 +13,7 @@ export default function Home() {
       />
 
       <div className="carousel w-full h-screen flex items-center bg-black">
+        {/*TITLE Page */}
         <div id="slide0" className="carousel-item relative w-full inset-0 flex flex-col items-start justify-center text-white pl-6" style={{ zIndex: 2 }}>
           <h1 className="text-5xl font-normal mb-6 tracking-tight">Technoference</h1>
           <p className="mb-8 max-w-xl text-center">For the best viewing experience, press F11.</p>
@@ -20,73 +21,95 @@ export default function Home() {
             <a href="#slide1" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow pr-8">❯</a>
           </div>
         </div>
-        <div id="slide1" className="carousel-item relative w-full">
+
+        {/* OLD Images */}
+        <div id="slide1" className="carousel-item relative w-full flex flex-row justify-start">
           <img
             src={`/images/IMG_0160.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-80" />
+            className="max-h-[85vh] max-w-[90vw] object-contain pl-24" />
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pl-8">Istana Japanese Garden | 2010</p>
+          </div>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide0" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide2" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full">
+        <div id="slide2" className="carousel-item relative w-full flex flex-row justify-start">
           <img
-            src={`/images/IMG_0106.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-80" />
+            src={`/images/IMG_0144.JPG`}
+            className="max-h-[85vh] max-w-[90vw] object-contain pl-24" />
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pl-8">East Coast Park | 2010</p>
+          </div>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide1" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide3" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full">
+        <div id="slide3" className="carousel-item relative w-full flex flex-row justify-start">
           <img
-            src={`/images/SNC00085.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-80" />
+            src={`/images/IMG_0148.JPG`}
+            className="max-h-[85vh] max-w-[90vw] object-contain pl-24" />
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pl-8">Science Centre | 2010</p>
+          </div>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide2" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide4" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
-        <div id="slide4" className="carousel-item relative w-full">
+        <div id="slide4" className="carousel-item relative w-full flex flex-row justify-start">
           <img
-            src={`/images/SNC00132.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pr-80" />
+            src={`/images/SNC00081.JPG`}
+            className="max-h-[85vh] max-w-[90vw] object-contain pl-24" />
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pl-8">Bukit Timah Hill | 2009</p>
+          </div>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide3" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide5" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
-        <div id="slide5" className="carousel-item relative w-full">
+
+        {/* NEW Images */}
+        <div id="slide5" className="carousel-item relative w-full flex flex-row justify-end">
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pr-8">text</p>
+          </div>
           <img
             src={`/images/IMG_0418.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pl-80" />
+            className="max-h-[85vh] max-w-[90vw] object-contain pr-24" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide4" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide6" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
-        <div id="slide6" className="carousel-item relative w-full">
+        <div id="slide6" className="carousel-item relative w-full flex flex-row justify-end">
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pr-8">text</p>
+          </div>
           <img
             src={`/images/IMG_0432.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pl-80" />
+            className="max-h-[85vh] max-w-[90vw] object-contain pr-24" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide5" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide7" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
-        <div id="slide7" className="carousel-item relative w-full">
+        <div id="slide7" className="carousel-item relative w-full flex flex-row justify-end">
+          <div className="flex items-end">
+            <p className="text-gray-300 text-xs pr-8">text</p>
+          </div>
           <img
             src={`/images/IMG_0429.JPG`}
-            className="max-h-[80vh] max-w-[90vw] object-contain mx-auto pl-80" />
+            className="max-h-[85vh] max-w-[90vw] object-contain pr-24" />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href="#slide6" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❮</a>
             <a href="#slide0" className="btn btn-circle bg-black text-gray-600 hover:text-gray-400 border-none shadow">❯</a>
           </div>
         </div>
       </div>
-
-
-
     </div>
   )
 }
