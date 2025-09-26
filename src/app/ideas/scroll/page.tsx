@@ -28,17 +28,18 @@ export default function Scroll() {
             />
 
             {/* TITLE Page */}
-            <section className="w-full min-h-screen flex flex-col items-start justify-center pl-6">
+            <section className="w-full h-screen flex flex-col items-start justify-center pl-6">
                 <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
                 <p className="mb-4 max-w-xl text-center text-xs">For the best viewing experience, press <kbd className="kbd kbd-sm !text-black">F11</kbd>.</p>
                 <p className="mb-8 max-w-xl text-center text-xs">Hit <kbd className="kbd kbd-sm !text-black">space</kbd> to continue.</p>
             </section>
 
             {/* PORTRAITS 4x1 */}
-            <section className="w-full min-h-screen flex flex-col justify-around">
+            <section className="w-full h-screen flex flex-col justify-around">
                 <div className="grid grid-cols-4 w-full">
-                    {["/images/IMG_0418.JPG", "/images/IMG_0483.JPG", "/images/IMG_0432.JPG", "/images/IMG_0483.JPG"].map((src) => (
+                    {["/images/IMG_0418.JPG", "/images/IMG_0483.JPG", "/images/IMG_0432.JPG", "/images/IMG_0483.JPG"].map((src, id) => (
                         <img
+                            key={id}
                             src={src}
                             className="max-h-[70vh] max-w-[25vw] object-contain rotate-90 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
                             alt=""
@@ -49,7 +50,7 @@ export default function Scroll() {
             </section>
 
             {/* OLD */}
-            <section className="w-full min-h-screen flex flex-col justify-center">
+            <section className="w-full h-screen flex flex-col justify-center">
                 <div className="flex flex-row justify-start items-end mb-8">
                     <img
                         src={`/images/IMG_0160.JPG`}
@@ -60,7 +61,7 @@ export default function Scroll() {
                 </div>
             </section>
 
-            <section className="w-full min-h-screen flex flex-col justify-center">
+            <section className="w-full h-screen flex flex-col justify-center">
                 <div className="flex flex-row justify-end items-end mb-24">
                     <p className="text-gray-300 text-xs pr-8">East Coast Park | 2010</p>
                     <img
@@ -71,7 +72,7 @@ export default function Scroll() {
                 </div>
             </section>
 
-            <section className="w-full min-h-screen flex flex-col justify-center">
+            <section className="w-full h-screen flex flex-col justify-center">
                 <div className="flex flex-row justify-start items-end mb-44">
                     <img
                         src={`/images/SNC00081.JPG`}
@@ -82,7 +83,7 @@ export default function Scroll() {
                 </div>
             </section>
 
-            <section className="w-full min-h-screen flex flex-col justify-center">
+            <section className="w-full h-screen flex flex-col justify-center">
                 <div className="flex flex-row justify-end items-end mb-60">
                     <p className="text-gray-300 text-xs pr-8">Science Centre Singapore | 2010</p>
                     <img
@@ -94,7 +95,7 @@ export default function Scroll() {
             </section>
 
             {/* TGT */}
-            <section className="w-full flex flex-col md:flex-row items-center justify-center py-12">
+            <section className="w-full flex flex-col items-center justify-center py-12">
                 <img
                     src={`/images/IMG_0429_copy.JPG`}
                     className="max-h-[70vh] max-w-[90vw] object-contain mb-4 md:mb-0 md:mr-8"
