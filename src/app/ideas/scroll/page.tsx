@@ -49,46 +49,48 @@ export default function Scroll() {
             </section>
 
             {/* OLD */}
-            <section className="w-full min-h-screen flex flex-col">
-                <div className="flex flex-row justify-start items-end">
+            <section className="w-full min-h-screen flex flex-col justify-center">
+                <div className="flex flex-row justify-start items-end mb-8">
                     <img
                         src={`/images/IMG_0160.JPG`}
-                        className="max-h-[80vh] max-w-[90vw] object-contain pl-8"
+                        className="max-h-[70vh] max-w-[90vw] object-contain pl-8"
                         alt="Istana Japanese Garden | 2010"
                     />
                     <p className="text-gray-300 text-xs pl-8">Istana Japanese Garden | 2010</p>
                 </div>
             </section>
 
-            <section className="w-full min-h-screen flex flex-col">
-                <div className="flex flex-row justify-end items-end">
+            <section className="w-full min-h-screen flex flex-col justify-center">
+                <div className="flex flex-row justify-end items-end mb-24">
                     <p className="text-gray-300 text-xs pr-8">East Coast Park | 2010</p>
                     <img
                         src={`/images/IMG_0144.JPG`}
-                        className="max-h-[80vh] max-w-[90vw] object-contain pr-8"
+                        className="max-h-[70vh] max-w-[90vw] object-contain pr-8"
                         alt="East Coast Park | 2010"
                     />
                 </div>
             </section>
 
-            <section className="w-full min-h-screen flex flex-col">
-                <div className="flex flex-row justify-start items-end">
+            <section className="w-full min-h-screen flex flex-col justify-center">
+                <div className="flex flex-row justify-start items-end mb-44">
                     <img
                         src={`/images/SNC00081.JPG`}
-                        className="max-h-[75vh] max-w-[90vw] object-contain pl-8"
+                        className="max-h-[70vh] max-w-[90vw] object-contain pl-8"
                         alt="Bukit Timah Hill | 2009"
                     />
                     <p className="text-gray-300 text-xs pl-8">Bukit Timah Hill | 2009</p>
                 </div>
             </section>
 
-            <section className="w-full min-h-screen flex flex-col items-center justify-center py-12">
-                <img
-                    src={`/images/IMG_0148.JPG`}
-                    className="max-h-[70vh] max-w-[90vw] object-contain mb-4"
-                    alt="Science Centre Singapore | 2010"
-                />
-                <p className="text-gray-300 text-xs">Science Centre Singapore | 2010</p>
+            <section className="w-full min-h-screen flex flex-col justify-center">
+                <div className="flex flex-row justify-end items-end mb-60">
+                    <p className="text-gray-300 text-xs pr-8">Science Centre Singapore | 2010</p>
+                    <img
+                        src={`/images/IMG_0148.JPG`}
+                        className="max-h-[70vh] max-w-[90vw] object-contain pr-8"
+                        alt="Science Centre Singapore | 2010"
+                    />
+                </div>
             </section>
 
             {/* TGT */}
