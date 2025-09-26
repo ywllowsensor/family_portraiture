@@ -30,8 +30,9 @@ export default function Home() {
       {/* TITLE Page */}
       <section className="w-full h-screen flex flex-col items-start justify-center pl-6 snap-center">
         <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
-        <p className="mb-4 max-w-xl text-center text-xs">For the best viewing experience, press <kbd className="kbd kbd-sm !text-black">F11</kbd>.</p>
-        <p className="mb-8 max-w-xl text-center text-xs">Hit <kbd className="kbd kbd-sm !text-black">space</kbd> to continue.</p>
+        <p className="mb-4 max-w-xl text-center text-xs">This project is best viewed on a laptop.</p>
+        <p className="mb-4 max-w-xl text-center">Press <kbd className="kbd kbd-sm text-black">F11</kbd> to go fullscreen.</p>
+        <p className="mb-8 max-w-xl text-center">Hit <kbd className="kbd kbd-sm !text-black">space</kbd> to continue.</p>
       </section>
 
       {/* DEFINITION/BG of technoference page??? */}
