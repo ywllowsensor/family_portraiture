@@ -75,7 +75,7 @@ export default function Scroll() {
                 <div className="flex flex-row justify-start items-end">
                     <img
                         src={`/images/SNC00081.JPG`}
-                        className="max-h-[80vh] max-w-[90vw] object-contain pl-8"
+                        className="max-h-[75vh] max-w-[90vw] object-contain pl-8"
                         alt="Bukit Timah Hill | 2009"
                     />
                     <p className="text-gray-300 text-xs pl-8">Bukit Timah Hill | 2009</p>
