@@ -18,7 +18,7 @@ export default function Scroll() {
 
     return (
         <div
-            className="w-full min-h-screen bg-black text-white"
+            className="w-full h-screen overflow-y-scroll bg-black text-white snap-y snap-mandatory"
             style={{ fontFamily: '"IBM Plex Mono", monospace' }}
         >
             {/* Google Fonts link */}
@@ -28,14 +28,14 @@ export default function Scroll() {
             />
 
             {/* TITLE Page */}
-            <section className="w-full h-screen flex flex-col items-start justify-center pl-6">
+            <section className="w-full h-screen flex flex-col items-start justify-center pl-6 snap-center">
                 <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
                 <p className="mb-4 max-w-xl text-center text-xs">For the best viewing experience, press <kbd className="kbd kbd-sm !text-black">F11</kbd>.</p>
                 <p className="mb-8 max-w-xl text-center text-xs">Hit <kbd className="kbd kbd-sm !text-black">space</kbd> to continue.</p>
             </section>
 
             {/* PORTRAITS 4x1 */}
-            <section className="w-full h-screen flex flex-col justify-around">
+            <section className="w-full h-screen flex flex-col justify-around snap-center">
                 <div className="grid grid-cols-4 w-full">
                     {["/images/IMG_0418.JPG", "/images/IMG_0483.JPG", "/images/IMG_0432.JPG", "/images/IMG_0483.JPG"].map((src, id) => (
                         <img
@@ -50,61 +50,79 @@ export default function Scroll() {
             </section>
 
             {/* OLD */}
-            <section className="w-full h-screen flex flex-col justify-center">
-                <div className="flex flex-row justify-start items-end mb-8">
+            <section className="w-full h-screen flex flex-col justify-center snap-center">
+                <div className="flex flex-row justify-start items-end">
                     <img
                         src={`/images/IMG_0160.JPG`}
-                        className="max-h-[70vh] max-w-[90vw] object-contain pl-8"
+                        className="max-h-[75vh] max-w-[90vw] object-contain pl-8"
                         alt="Istana Japanese Garden | 2010"
                     />
                     <p className="text-gray-300 text-xs pl-8">Istana Japanese Garden | 2010</p>
                 </div>
             </section>
 
-            <section className="w-full h-screen flex flex-col justify-center">
-                <div className="flex flex-row justify-end items-end mb-24">
+            <section className="w-full h-screen flex flex-col justify-center snap-center">
+                <div className="flex flex-row justify-end items-end">
                     <p className="text-gray-300 text-xs pr-8">East Coast Park | 2010</p>
                     <img
                         src={`/images/IMG_0144.JPG`}
-                        className="max-h-[70vh] max-w-[90vw] object-contain pr-8"
+                        className="max-h-[75vh] max-w-[90vw] object-contain pr-8"
                         alt="East Coast Park | 2010"
                     />
                 </div>
             </section>
 
-            <section className="w-full h-screen flex flex-col justify-center">
-                <div className="flex flex-row justify-start items-end mb-44">
+            <section className="w-full h-screen flex flex-col justify-center snap-center">
+                <div className="flex flex-row justify-start items-end">
                     <img
                         src={`/images/SNC00081.JPG`}
-                        className="max-h-[70vh] max-w-[90vw] object-contain pl-8"
+                        className="max-h-[75vh] max-w-[90vw] object-contain pl-8"
                         alt="Bukit Timah Hill | 2009"
                     />
                     <p className="text-gray-300 text-xs pl-8">Bukit Timah Hill | 2009</p>
                 </div>
             </section>
 
-            <section className="w-full h-screen flex flex-col justify-center">
-                <div className="flex flex-row justify-end items-end mb-60">
+            <section className="w-full h-screen flex flex-col justify-center snap-center">
+                <div className="flex flex-row justify-end items-end">
                     <p className="text-gray-300 text-xs pr-8">Science Centre Singapore | 2010</p>
                     <img
                         src={`/images/IMG_0148.JPG`}
-                        className="max-h-[70vh] max-w-[90vw] object-contain pr-8"
+                        className="max-h-[75vh] max-w-[90vw] object-contain pr-8"
                         alt="Science Centre Singapore | 2010"
                     />
                 </div>
             </section>
 
-            {/* TGT */}
-            <section className="w-full flex flex-col items-center justify-center py-12">
+            {/* TGT - NANA & ABANG */}
+            <section className="w-full h-screen flex flex-col items-center justify-center snap-center">
                 <img
                     src={`/images/IMG_0429_copy.JPG`}
-                    className="max-h-[70vh] max-w-[90vw] object-contain mb-4 md:mb-0 md:mr-8"
+                    className="max-h-[80vh] max-w-[90vw] object-contain"
                     alt="TGT"
                 />
-                <p className="text-gray-300 text-xs">text</p>
             </section>
 
-            {/* Overlay for fullscreen image */}
+            {/* TGT - IBU & BABA */}
+            <section className="w-full h-screen flex flex-col items-center justify-center snap-center">
+                <img
+                    src={`/images/IMG_0429_copy.JPG`}
+                    className="max-h-[80vh] max-w-[90vw] object-contain"
+                    alt="TGT"
+                />
+            </section>
+
+            {/* TGT - EVERYONE */}
+            <section className="w-full h-screen flex flex-col items-center justify-center snap-center">
+                <img
+                    src={`/images/IMG_0429_copy.JPG`}
+                    className="max-h-[80vh] max-w-[90vw] object-contain"
+                    alt="TGT"
+                />
+            </section>
+
+
+            {/* Overlay for portraits */}
             {overlayImg && (
                 <div
                     className={`fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ${isOverlayVisible ? 'opacity-100' : 'opacity-0'}`}
