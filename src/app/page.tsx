@@ -77,7 +77,7 @@ export default function Home() {
       <section className="w-full h-screen flex flex-col justify-center snap-center">
         <div className="flex flex-row justify-start items-end">
           <img
-            src={`/images/SNC00081.JPG`}
+            src={`/images/SNC00081.jpg`}
             className="max-h-[75vh] max-w-[90vw] object-contain pl-8"
             alt="Bukit Timah Hill | 2009"
           />
