@@ -39,12 +39,12 @@ export default function Home() {
 
       {/* PORTRAITS 4x1 */}
       <section className="w-full h-screen flex flex-col justify-around snap-center">
-        <div className="grid grid-cols-4 w-full">
-          {["/images/IMG_0418.JPG", "/images/IMG_0483.JPG", "/images/IMG_0432.JPG", "/images/IMG_0483.JPG"].map((src, id) => (
+        <div className="flex flex-row justify-evenly w-full">
+          {["/images/IMG_0418.JPG", "/images/IMG_0432.JPG", "/images/IMG_0494.JPG", "/images/IMG_0494.JPG"].map((src, id) => (
             <img
               key={id}
               src={src}
-              className="max-h-[70vh] max-w-[25vw] object-contain rotate-90 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
+              className="max-h-[50vh] max-w-[25vw] object-contain cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
               alt=""
               onClick={() => handleImgClick(src)}
             />
@@ -146,7 +146,7 @@ export default function Home() {
         >
           <img
             src={overlayImg}
-            className={`max-h-[60vh] max-w-[60vw] object-contain rotate-90 transition-transform duration-300 ${isOverlayVisible ? 'scale-100' : 'scale-75'}`}
+            className={`max-h-[80vh] max-w-[60vw] object-contain transition-transform duration-300 ${isOverlayVisible ? 'scale-100' : 'scale-75'}`}
             alt="Fullscreen"
             onClick={e => e.stopPropagation()}
           />
