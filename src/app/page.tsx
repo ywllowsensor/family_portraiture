@@ -40,7 +40,7 @@ export default function Home() {
       {/* PORTRAITS 4x1 */}
       <section className="w-full h-screen flex flex-col justify-around snap-center">
         <div className="flex flex-row justify-evenly w-full">
-          {["/images/IMG_0418.JPG", "/images/IMG_0432.JPG", "/images/IMG_0494.JPG", "/images/IMG_0494.JPG"].map((src, id) => (
+          {["/images/IMG_0542.JPG", "/images/IMG_0432.JPG", "/images/IMG_0494.JPG", "/images/IMG_0521.JPG"].map((src, id) => (
             <img
               key={id}
               src={src}
@@ -109,7 +109,7 @@ export default function Home() {
       {/* TGT - IBU & BABA */}
       <section className="w-full h-screen flex flex-col items-center justify-center snap-center">
         <img
-          src={`/images/IMG_0429_copy.JPG`}
+          src={`/images/IMG_0529.JPG`}
           className="max-h-[80vh] max-w-[90vw] object-contain"
           alt="TGT"
         />
