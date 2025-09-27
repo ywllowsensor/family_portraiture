@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* TITLE Page */}
       <section className="w-full h-screen flex flex-col items-start justify-center pl-6 snap-center">
-        <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
+        <h1 className="text-5xl font-normal mb-4 tracking-tight underline">"alone together"</h1>
         <p className="mb-4 max-w-xl text-center text-xs">This project is best viewed on a laptop, you may choose to:</p>
         <p className="mb-4 max-w-xl text-left text-xs">
           1.
@@ -135,7 +135,7 @@ export default function Home() {
       {/* TGT - EVERYONE */}
       <section className="w-full h-screen flex flex-col items-center justify-center snap-center">
         <img
-          src={`/images/IMG_0429_copy.JPG`}
+          src={`/images/IMG_0589.JPG`}
           className="max-h-[80vh] max-w-[90vw] object-contain mb-12"
           alt="TGT"
         />
