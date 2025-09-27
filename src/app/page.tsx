@@ -32,7 +32,7 @@ export default function Home() {
         <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
         <p className="mb-4 max-w-xl text-center text-xs">This project is best viewed on a laptop.</p>
         <p className="mb-4 max-w-xl text-left">
-          Press <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">F11</kbd> to go fullscreen. 
+          Press <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">F11</kbd> or <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Fn</kbd> + <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">F11</kbd> to go fullscreen. 
           <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Click</kbd> the screen once. 
           Hit <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">space</kbd> to continue.</p>
       </section>
