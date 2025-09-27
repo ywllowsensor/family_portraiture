@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "alone together",
+  title: "closer apart.",
   description: "A family portraiture",
 };
 
