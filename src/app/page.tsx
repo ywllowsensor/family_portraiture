@@ -31,7 +31,10 @@ export default function Home() {
       <section className="w-full h-screen flex flex-col items-start justify-center pl-6 snap-center">
         <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
         <p className="mb-4 max-w-xl text-center text-xs">This project is best viewed on a laptop.</p>
-        <p className="mb-4 max-w-xl text-left">Press <kbd className="kbd kbd-sm text-black">F11</kbd> to go fullscreen. <kbd className="kbd kbd-sm !text-black">Click</kbd> the screen once. Hit <kbd className="kbd kbd-sm !text-black">space</kbd> to continue.</p>
+        <p className="mb-4 max-w-xl text-left">
+          Press <kbd className="kbd kbd-sm">F11</kbd> to go fullscreen. 
+          <kbd className="kbd kbd-sm text-black">Click</kbd> the screen once. 
+          Hit <kbd className="kbd kbd-sm !text-black">space</kbd> to continue.</p>
       </section>
 
       {/* DEFINITION/BG of technoference page??? */}
