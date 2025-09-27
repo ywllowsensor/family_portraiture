@@ -30,11 +30,26 @@ export default function Home() {
       {/* TITLE Page */}
       <section className="w-full h-screen flex flex-col items-start justify-center pl-6 snap-center">
         <h1 className="text-5xl font-normal mb-6 tracking-tight underline">Technoference</h1>
-        <p className="mb-4 max-w-xl text-center text-xs">This project is best viewed on a laptop.</p>
-        <p className="mb-4 max-w-xl text-left">
-          Press <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">F11</kbd> or <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Fn</kbd> + <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">F11</kbd> to go fullscreen. 
-          <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Click</kbd> the screen once. 
-          Hit <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">space</kbd> to continue.</p>
+        <p className="mb-4 max-w-xl text-center text-xs">This project is best viewed on a laptop, you may choose to:</p>
+        <p className="mb-4 max-w-xl text-left text-xs">
+          1.
+          <button
+            className="btn btn-info rounded-sm btn-sm font-light ml-1.5"
+            onClick={() => {
+              if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+              }
+            }}
+          >
+            Go Fullscreen
+          </button>
+        </p>
+        <p className="mb-4 max-w-xl text-left text-xs">
+          2. <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Click</kbd> the screen once
+        </p>
+        <p className="mb-4 max-w-xl text-left text-xs">
+          3. Hit <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">space</kbd> to continue
+        </p>
       </section>
 
       {/* DEFINITION/BG of technoference page??? */}
@@ -141,27 +156,29 @@ export default function Home() {
       </section>
 
       {/* Overlay for portraits */}
-      {overlayImg && (
-        <div
-          className={`fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ${isOverlayVisible ? 'opacity-100' : 'opacity-0'}`}
-          onClick={closeOverlay}
-        >
-          <img
-            src={overlayImg}
-            className={`max-h-[80vh] max-w-[60vw] object-contain transition-transform duration-300 ${isOverlayVisible ? 'scale-100' : 'scale-75'}`}
-            alt="Fullscreen"
-            onClick={e => e.stopPropagation()}
-          />
-          <button
-            className="absolute top-8 right-8 text-white hover:text-gray-300 text-3xl cursor-pointer"
+      {
+        overlayImg && (
+          <div
+            className={`fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ${isOverlayVisible ? 'opacity-100' : 'opacity-0'}`}
             onClick={closeOverlay}
           >
-            ×
-          </button>
-        </div>
-      )}
+            <img
+              src={overlayImg}
+              className={`max-h-[80vh] max-w-[60vw] object-contain transition-transform duration-300 ${isOverlayVisible ? 'scale-100' : 'scale-75'}`}
+              alt="Fullscreen"
+              onClick={e => e.stopPropagation()}
+            />
+            <button
+              className="absolute top-8 right-8 text-white hover:text-gray-300 text-3xl cursor-pointer"
+              onClick={closeOverlay}
+            >
+              ×
+            </button>
+          </div>
+        )
+      }
 
 
-    </div>
+    </div >
   )
 }
