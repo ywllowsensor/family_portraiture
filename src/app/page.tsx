@@ -34,7 +34,7 @@ export default function Home() {
         <p className="mb-4 max-w-xl text-left text-xs">
           1.
           <button
-            className="btn btn-info rounded-sm btn-sm font-light ml-1.5"
+            className="btn btn-accent rounded-sm btn-sm font-light ml-1.5"
             onClick={() => {
               if (document.documentElement.requestFullscreen) {
                 document.documentElement.requestFullscreen();
@@ -45,7 +45,7 @@ export default function Home() {
           </button>
         </p>
         <p className="mb-4 max-w-xl text-left text-xs">
-          2. <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Click</kbd> the screen once
+          2. <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Click</kbd> anywhere on the screen once <span className="italic">(except for the previous button!)</span>
         </p>
         <p className="mb-4 max-w-xl text-left text-xs">
           3. Hit <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">space</kbd> to continue
