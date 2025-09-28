@@ -48,7 +48,7 @@ export default function Home() {
           2. <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">Click</kbd> anywhere on the screen once <span className="italic">(except for the previous button!)</span>
         </p>
         <p className="mb-4 max-w-xl text-left text-xs">
-          3. Hit <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">space</kbd> to continue
+          3. Hit <kbd className="kbd kbd-sm text-black dark:bg-gray-900 dark:text-white">spacebar</kbd> to continue
         </p>
       </section>
 
