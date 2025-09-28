@@ -34,7 +34,7 @@ export default function Home() {
         <p className="mb-4 max-w-xl text-left text-xs">
           1.
           <button
-            className="btn btn-accent rounded-sm btn-sm font-light ml-1.5"
+            className="btn btn-accent rounded-sm btn-sm ml-1.5"
             onClick={() => {
               if (document.documentElement.requestFullscreen) {
                 document.documentElement.requestFullscreen();
